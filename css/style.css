@@ -1,0 +1,1146 @@
+@charset "UTF-8";
+
+/*GLOBAL CSS KEY*/
+/*
+vaimo overrides
+slick slider
+grabbing cursor
+misc
+hotspot
+product widget
+cta, price point, badge
+text
+layout spacing
+background
+*/
+
+/*vaimo overrides*/
+
+:root {
+  --primary-color: #fd0099;
+  --dark-color: #141414;
+}
+
+.vaimo-cms>[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+header#header {
+  margin-left: -15px;
+}
+
+.LandingPageContent img {
+  margin: auto;
+}
+
+.LandingPageContent .primary-color {
+  color: var(--primary-color);
+}
+
+
+
+.catalog-category-view .selected-products-head hr {
+  display: none;
+}
+
+.main-container {
+  display: none;
+}
+
+.catalog-category-view .vaimo-cms .widget-static-block {
+  margin-bottom: 0 !important;
+}
+
+.LandingPageContent .aspot,
+.LandingPageContent .bspot,
+.LandingPageContent .cspot {
+  overflow: hidden;
+}
+
+/*slick slider*/
+.sliderA {
+  visibility: hidden;
+  margin-bottom: 0 !important;
+}
+
+.sliderA.slick-initialized {
+  visibility: visible;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  padding-bottom: 0;
+}
+
+.LandingPageContent .slick-dots {
+  bottom: 0px;
+}
+
+.LandingPageContent .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.LandingPageContent .slick-dots li button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+
+.LandingPageContent .slick-dots li.slick-active button {
+  background-color: #000;
+}
+
+.LandingPageContent .slick-dots li button:before {
+  content: none !important;
+}
+
+/*grabbing cursor*/
+.sliderA:hover,
+.sliderA a:hover {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
+.sliderA.grabbing,
+.sliderA.grabbing a {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+/*misc*/
+.LandingPageContent {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.noPaddMyChild>[class*="col-"],
+.noPaddOnElement {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.LandingPageContent .aspectHack {
+  width: 100%;
+}
+
+.LandingPageContent .relative {
+  position: relative;
+}
+
+/*hotspot*/
+.LandingPageContent .hotspot {
+  display: inline-block;
+  top: 0;
+}
+
+.LandingPageContent .hotspot.lhs {
+  width: 32%;
+}
+
+.LandingPageContent .hotspot.rhs {
+  width: 32%;
+  right: 0;
+  left: auto;
+}
+
+/*cta, price point, badge*/
+.LandingPageContent a {
+  text-decoration: none;
+}
+
+.LandingPageContent .btn {
+  margin: auto;
+  text-decoration: none;
+  font-family: "Inter UI", sans-serif;
+  font-size: 12px;
+  padding: 6px 0;
+  width: 145px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 5px;
+  border-radius: 0px;
+  margin-left: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.LandingPageContent .mrp-btn-white-bdr {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer !important;
+}
+
+.LandingPageContent .mrp-btn-RED-bdr {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: var(--primary-color) 1px solid;
+}
+
+.LandingPageContent .mrp-btn-RED-bdr:hover {
+  background-color: #000;
+  color: var(--primary-color);
+}
+
+.LandingPageContent .mrp-btn-white-bdr:hover {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #000;
+  cursor: pointer !important;
+}
+
+.LandingPageContent .mrp-btn-black-bdr {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer !important;
+}
+
+.LandingPageContent .mrp-btn-black-bdr:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: var(--primary-color);
+  cursor: pointer !important;
+}
+
+.LandingPageContent .pricePoint {
+  text-align: left;
+}
+
+.LandingPageContent .pricePoint .redText {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.LandingPageContent .pricePoint .redText sup {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.LandingPageContent .round-btn {
+  border-radius: 50%;
+  font-size: 12px !important;
+  width: 70px;
+  height: 70px;
+  padding: 23px 0 0;
+  line-height: 13px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  color: var(--primary-color);
+  background-color: #000;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .LandingPageContent .round-btn {
+    font-size: 10px !important;
+    line-height: 13px;
+    padding: 17px 0 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+/*text*/
+.LandingPageContent h1,
+.LandingPageContent h2,
+.LandingPageContent h3,
+.LandingPageContent h4,
+.LandingPageContent h5,
+.LandingPageContent h6,
+.LandingPageContent a,
+.LandingPageContent p {
+  font-family: "Inter UI", sans-serif;
+}
+
+.LandingPageContent h1 {
+  font-weight: 700;
+  color: #fd0099c2;
+  font-style: normal;
+  font-size: 5.2vw;
+  line-height: 5vw;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.LandingPageContent h2 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-style: normal;
+  font-size: 88px;
+  line-height: 85px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.LandingPageContent h2 sup {
+  font-size: 58%;
+}
+
+.LandingPageContent h3 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 29px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.LandingPageContent h4 {
+  font-size: 30px;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: auto;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.LandingPageContent h5 {
+  font-size: 33px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.LandingPageContent h5.white {
+  color: var(--primary-color);
+}
+
+.LandingPageContent h5 sup {
+  font-size: 61%;
+}
+
+.LandingPageContent p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.LandingPageContent .lightText {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 19px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: -10px;
+}
+
+.LandingPageContent .redText {
+  color: var(--primary-color);
+  letter-spacing: -1px;
+}
+
+.LandingPageContent .whiteText {
+  color: #fff !important;
+}
+
+/*layout spacing*/
+.LandingPageContent .margTopBig {
+  margin-top: 83px;
+}
+
+.LandingPageContent .margTopSml {
+  margin-top: 30px;
+}
+
+.LandingPageContent .margTopXtrSml {
+  margin-top: 15px;
+}
+
+/*background*/
+.LandingPageContent .bgWrapper {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*hover wrapper*/
+.LandingPageContent .hoverWrapper {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+/*aspot*/
+
+/*product widget*/
+.LandingPageContent #prodigotnothing {
+  margin-top: 0;
+}
+
+.LandingPageContent #prodigotnothing h2 {
+  display: none;
+}
+
+.LandingPageContent #prodigotnothing .button {
+  margin-top: -3px;
+}
+
+.LandingPageContent #prodigotnothing .button span {
+  margin: auto;
+  text-decoration: none;
+  font-family: "Inter UI", sans-serif;
+  font-size: 14px;
+  padding: 8px 0;
+  width: 160px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.LandingPageContent #prodigotnothing .brand-text {
+  line-height: normal;
+  text-transform: uppercase;
+  bottom: -6px;
+  position: relative;
+  font-family: "Inter UI", sans-serif;
+  font-weight: 500;
+}
+
+.LandingPageContent #prodigotnothing .product-name {
+  margin: -1px 0 10px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  font-family: "Inter UI", sans-serif;
+}
+
+.LandingPageContent #prodigotnothing .products-grid .price {
+  font-family: "Inter UI", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.LandingPageContent #prodigotnothing .owl-theme .owl-dots {
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+.LandingPageContent .embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.LandingPageContent .embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.LandingPageContent img {
+  width: 100%;
+}
+
+.LandingPageContent .text-p {
+  color: var(--primary-color);
+}
+
+
+.LandingPageContent header.Aspot {
+  position: relative;
+  height: 949px;
+  margin-bottom: 1958px;
+}
+
+.LandingPageContent .Aspot .btn {
+  margin-top: 15px;
+  border-color: #fff;
+  color: #fff;
+  background: linear-gradient(to bottom right, #ec008c94, #f200dbb3);
+  width: 10vw;
+}
+
+.LandingPageContent .Aspot .btn:hover {
+  background: linear-gradient(to bottom right, #ec008ed2, #9100f2);
+}
+
+.LandingPageContent .Aspot .Con {
+  width: 50%;
+  position: absolute;
+  left: -4%;
+  right: 0%;
+  top: 37%;
+  margin: 0 auto;
+  z-index: 3;
+
+}
+
+
+.LandingPageContent .Aspot .Con h1 {
+
+  font-family: 'Druk Text Wide Web';
+}
+
+
+.LandingPageContent .Aspot .Con p {
+
+  color: #ec008ed2;
+  font-weight: 600;
+  margin: 0 auto;
+  font-size: 1.1vw;
+  line-height: 1.5;
+}
+
+
+
+.LandingPageContent .Aspot .Con1 {
+  width: 67%;
+  float: left;
+  margin-right: 2%;
+}
+
+.LandingPageContent .Aspot .Con2 {
+  width: 24%;
+  float: left;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+.LandingPageContent .Aspot .Con3 {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  right: 75%;
+  top: 44%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con4 {
+  width: 18%;
+  position: absolute;
+  left: 0;
+  right: 29%;
+  top: 47.5%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con5 {
+  width: 22%;
+  position: absolute;
+  left: 13%;
+  right: 0;
+  top: 59%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.LandingPageContent .Aspot .Con6 {
+  width: 16%;
+  position: absolute;
+  left: 48%;
+  right: 0%;
+  top: 72%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con6 .btn.mrp-btn-black-bdr {
+  margin-top: -24px;
+}
+
+
+.LandingPageContent .Aspot .Con7 {
+  width: 17%;
+  position: absolute;
+  left: 83%;
+  right: 0%;
+  top: 68%;
+  margin: 0 auto;
+}
+
+
+.LandingPageContent .Aspot .Con8 {
+  width: 23%;
+  position: absolute;
+  left: 0;
+  right: 23%;
+  top: 107%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con8 .btn.mrp-btn-black-bdr {
+  margin-top: 2px;
+}
+
+.LandingPageContent .Aspot .Con9 {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  right: 29%;
+  top: 97%;
+  margin: 0 auto;
+}
+
+
+.LandingPageContent .Aspot .Con10 {
+  width: 36%;
+  position: absolute;
+  left: 0;
+  right: -21%;
+  top: 127%;
+  margin: 0 auto;
+}
+
+.LandingPageContent .Aspot .Con11 {
+  width: 20%;
+  position: absolute;
+  left: 0;
+  right: 77%;
+  top: 119%;
+  margin: 0 auto;
+
+}
+
+.LandingPageContent .Aspot .Con11 .btn.mrp-btn-black-bdr {
+  margin-top: -2px;
+}
+
+
+.LandingPageContent .Aspot .Con12 {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  left: 80%;
+  top: 122%;
+  margin: 0 auto;
+}
+
+.LandingPageContent .Aspot .Con12 .btn.mrp-btn-black-bdr {
+  margin-top: -93px;
+}
+
+.LandingPageContent .Aspot .Con13 {
+  width: 14%;
+  position: absolute;
+  left: 0;
+  right: 35%;
+  top: 147%;
+  margin: 0 auto;
+}
+
+.LandingPageContent .Aspot .Con14 {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  right: 31%;
+  top: 181%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con15 {
+  width: 23%;
+  position: absolute;
+  left: 0;
+  right: -13%;
+  top: 184%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.LandingPageContent .Aspot .Con16 {
+  width: 14%;
+  position: absolute;
+  left: 0;
+  right: -54%;
+  top: 181%;
+  margin: 0 auto;
+  z-index: 1;
+
+}
+
+.LandingPageContent .Aspot .Con17 {
+  width: 13%;
+  position: absolute;
+  left: 0;
+  right: -85%;
+  top: 192%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+
+
+.LandingPageContent .Aspot .Con18 {
+  width: 21%;
+  position: absolute;
+  right: 0;
+  left: -82%;
+  top: 189%;
+  margin: 0 auto;
+
+}
+
+.LandingPageContent .Aspot .Con19 {
+  width: 17%;
+  position: absolute;
+  right: 0;
+  left: -83%;
+  top: 244%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con20 {
+  width: 26%;
+  position: absolute;
+  right: 0;
+  left: -38%;
+  top: 221%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.LandingPageContent .Aspot .Con21 {
+  width: 15%;
+  position: absolute;
+  right: 0;
+  left: 13%;
+  top: 248%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+
+.LandingPageContent .Aspot .Con22 {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  left: 69%;
+  top: 234%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+
+.LandingPageContent .Aspot .Con23 {
+  width: 35%;
+  position: absolute;
+  right: 0;
+  left: 65%;
+  top: 216%;
+  margin: 0 auto;
+}
+
+.LandingPageContent .Aspot .Con24 {
+  width: 5.5%;
+  position: absolute;
+  right: 0;
+  left: 32%;
+  top: 177%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+
+.LandingPageContent .Aspot .Con25 {
+  width: 6%;
+  position: absolute;
+  right: 0;
+  left: -56%;
+  top: 104%;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+
+.LandingPageContent .Aspot .Con26 {
+  width: 19%;
+  position: absolute;
+  right: 59%;
+  top: 4%;
+  margin: 0 auto;
+}
+
+.LandingPageContent .Aspot .Con27 {
+  width: 13%;
+  position: absolute;
+  right: 0;
+  left: 76%;
+  top: 56%;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+
+.LandingPageContent .Aspot .Con28 {
+  width: 16%;
+  position: absolute;
+  right: 0;
+  left: -5%;
+  top: 292%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+
+
+
+@media (max-width: 900px) {}
+
+/*MEDIA QUERIES*/
+
+
+
+/* 
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 1242px;
+    margin-bottom: 2560px;
+  }
+
+  .LandingPageContent .btn {
+    font-size: 18px;
+
+  }
+
+  .LandingPageContent .Aspot .Con3 {
+    width: 23%;
+    right: 75%;
+    top: 47%;
+  }
+} */
+
+
+@media (min-width: 2501px) {
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 1242px;
+    margin-bottom: 2560px;
+  }
+
+  .LandingPageContent .btn {
+    font-size: 18px;
+
+  }
+
+  .LandingPageContent .Aspot .Con3 {
+    width: 23%;
+    right: 75%;
+    top: 47%;
+  }
+}
+
+
+@media (max-width: 2201px) {
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 1099px;
+    margin-bottom: 2300px;
+  }
+
+}
+
+@media (max-width: 2000px) {
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 987px;
+    margin-bottom: 2051px;
+  }
+
+}
+
+
+
+@media (max-width: 1800px) {
+
+  .LandingPageContent .Aspot .Con2 {
+    width: 24%;
+    float: left;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .LandingPageContent .Aspot .Con3 {
+    width: 23%;
+    right: 75%;
+    top: 47%;
+  }
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 835px;
+    margin-bottom: 1800px;
+  }
+
+}
+
+
+
+
+@media (max-width: 1600px) {
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 745px;
+    margin-bottom: 198vh;
+  }
+
+}
+
+
+@media (max-width: 1500px) {
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 680px;
+    margin-bottom: 1440px;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 597px;
+    margin-bottom: 1255px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1199px) {
+
+
+
+  .LandingPageContent .Aspot .Con {
+    top: 31%;
+
+  }
+
+  .LandingPageContent .Aspot .Con2 {
+    margin-top: 2rem;
+
+  }
+
+  .LandingPageContent .Aspot .Con3 {
+    top: 38%;
+  }
+
+  .LandingPageContent .Aspot .Con4 {
+    top: 39.5%;
+  }
+
+
+  .LandingPageContent .Aspot .Con5 {
+    top: 53%;
+  }
+
+  .LandingPageContent .Aspot .Con6 {
+    top: 62%;
+  }
+
+  .LandingPageContent .Aspot .Con7 {
+    top: 57%;
+  }
+
+  .LandingPageContent .Aspot .Con8 {
+    top: 88%;
+
+  }
+
+  .LandingPageContent .Aspot .Con9 {
+    top: 80%;
+  }
+
+  .LandingPageContent .Aspot .Con11 {
+
+    top: 102%;
+  }
+
+  .LandingPageContent .Aspot .Con12 {
+    top: 103%;
+  }
+
+  .LandingPageContent .Aspot .Con13 {
+    top: 123%;
+
+  }
+
+  .LandingPageContent .Aspot .Con10 {
+    top: 107%;
+  }
+
+
+  .LandingPageContent .Aspot .Con13 {
+    top: 124%;
+  }
+
+  .LandingPageContent .Aspot .Con14 {
+    top: 155%;
+
+  }
+
+  .LandingPageContent .Aspot .Con15 {
+    top: 157%;
+
+  }
+
+  .LandingPageContent .Aspot .Con16 {
+    top: 151%;
+
+  }
+
+  .LandingPageContent .Aspot .Con17 {
+    top: 159%;
+  }
+
+
+
+  .LandingPageContent .Aspot .Con18 {
+    top: 161%;
+  }
+
+  .LandingPageContent .Aspot .Con19 {
+    top: 203%;
+  }
+
+  .LandingPageContent .Aspot .Con20 {
+
+    top: 188%;
+
+  }
+
+
+
+  .LandingPageContent .Aspot .Con21 {
+
+    top: 211%;
+
+  }
+
+  .LandingPageContent .Aspot .Con22 {
+    top: 196%;
+
+  }
+
+  .LandingPageContent .Aspot .Con23 {
+    top: 179%;
+
+  }
+
+  .LandingPageContent .Aspot .Con24 {
+    top: 150%;
+
+  }
+
+
+  .LandingPageContent .Aspot .Con25 {
+    top: 89%;
+  }
+
+  .LandingPageContent .Aspot .Con27 {
+    top: 45%;
+
+  }
+
+  .LandingPageContent .Aspot .Con28 {
+    top: 246%;
+
+  }
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 597px;
+    margin-bottom: 1017px;
+  }
+
+  .LandingPageContent .Aspot .btn {
+    width: 14vw;
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1024px) {
+
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 66Vh;
+    margin-bottom: 138vh;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+  .LandingPageContent header.Aspot {
+    position: relative;
+    height: 44Vh;
+    margin-bottom: 73vh;
+  }
+
+  .LandingPageContent .Aspot .btn {
+    width: 14vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+  .LandingPageContent .mrp-btn-black-bdr {
+    border: 1px solid #fe6ffd;
+    background-color: transparent;
+    color: #fe6ffd;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    padding: 14px 0 !important;
+    width: 90% !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px;
+  }
+
+
+  .cspot {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cspot .dspotMobileSlider {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
